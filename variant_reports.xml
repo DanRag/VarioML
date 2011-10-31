@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vreport 
+    xmlns="http://gen2phen.org/varioml/2.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="vreports.xsd"
+    >     
+    <source id="exdb">
+        <name>Example database</name>
+        <contact>
+            <name>Mr. Example</name>  
+        </contact> 
+    </source> 
+
+    <panel id="0001">
+        
+        <frequency type="carrier">
+            <category term="exist"/>
+        </frequency>
+        <population term="Finland" type="region"/>
+        
+        <variant id="1002">
+            <gene accession="ACLY"/>
+            <ref_seq accession="n123445"/>
+            <name scheme="HGVS">c.12345G&gt;A</name> 
+           
+        </variant>
+    </panel>
+    
+    <panel id="0002">
+        
+        <!-- frequency of co-existence of two variants in a ethnic group called Caucasoid-->
+        <frequency type="carrier">
+            <freq>0.3</freq>
+        </frequency>
+
+        <phenotype accession="208400" source="OMIM" term="aspartylglucosaminuria"/>
+        <population term="Caucasoid" type="ethnic"/>        
+
+        <variant id="1002">
+            <ref_seq accession="NM_0001"></ref_seq>
+            <name scheme="HGVS">c.1233G&gt;T</name>
+        </variant>
+        <variant id="1005">
+            <ref_seq accession="NM_0001"></ref_seq>
+            <name scheme="HGVS">c.127C&gt;A</name>
+        </variant>
+
+    </panel>
+
+    <panel id="abcde">
+
+        <frequency type="carrier">
+            <freq>0.4</freq>
+        </frequency>
+        <phenotype accession="208400" source="OMIM" term="aspartylglucosaminuria"/>
+        <population term="Sweden" type="region"/>
+        
+        <variant id="1002Y">
+            <ref_seq accession="NM00001"/>
+            <name scheme="HGVS">c.6665G&gt;A</name>
+            <!-- Note that variant's frequency element is also available. Important to specify in advance
+                how the element is used. 
+            -->
+            <frequency type="carrier">
+                <population term="Finlad" type="region"/>
+                <freq>0.3</freq>
+            </frequency>
+        </variant>
+    </panel>
+</vreport>

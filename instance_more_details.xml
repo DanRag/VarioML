@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lsdb id="submission1" schema_version="1.0" xmlns="http://varioml.org/xml/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://gen2phen.org/lsdb/2.0 file:/Users/muilu/Documents/Dev/SVN_repos/gen2phen/trunk/data_formats/xml/lsdb.xsd">
+    
+    <source id="fimm">
+        <name>Insitute for Molecular Medicine Finland (FIMM)</name>
+        <contact>
+            <name>J. Muilu</name>
+        </contact>
+    </source>
+     
+    <individual id="id1"> 
+        <gender code="1"/>
+        
+        <phenotype source="DOID" accession="5956" term="Fanconi anemia"/>
+        <population term="Caucasian" type="ethnic"> <evidence_code source="example_ontology" accession="abcd" term="ethnicity of mother"/></population>
+        <population term="Asian" type="ethnic"> <evidence_code source="example_ontology" accession="cdef" term="ethnicity of father"/></population>
+        
+        <variant id="id5">
+            <gene source="HGNC" accession="BRCA2"/>
+            <ref_seq accession="XX"></ref_seq>
+            <name scheme="HGVS"> c.8488-1G&gt;A </name>
+
+            <seq_changes>
+                
+                <variant id="id5_1">
+                    <ref_seq accession="XZO"></ref_seq>
+                    <name scheme="HGVS">	r.8488_8491deltgga</name>
+                    <seq_changes>
+                        <variant type="AA" id="id5_2">
+                            <ref_seq accession="XXX"></ref_seq>
+                            <name scheme="HGVS">p.W2830_K2833del</name>
+                        </variant>
+                    </seq_changes>
+                    
+                </variant>
+            </seq_changes>
+  
+        </variant>  
+    </individual>
+    
+    
+
+</lsdb>

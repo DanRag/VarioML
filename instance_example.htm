@@ -1,0 +1,43 @@
+
+&lt;?xml version="1.0" encoding="UTF-8"?> 
+&lt;lsdb id="submission1" schema_version="2.0" xmlns="http://gen2phen.org/varioml/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://gen2phen.org/lsdb/2.0 file:/Users/muilu/Documents/Dev/SVN_repos/gen2phen/trunk/data_formats/xml/lsdb.xsd"> 
+     
+    &lt;source id="fimm"> 
+        &lt;name>Insitute for Molecular Medicine Finland (FIMM)&lt;/name> 
+        &lt;contact> 
+            &lt;name>J. Muilu&lt;/name> 
+        &lt;/contact> 
+    &lt;/source> 
+                
+    &lt;individual id="id1"> 
+        &lt;gender code="1"/> 
+        
+        &lt;variant id="id3"> 
+            &lt;ref_seq accession="XYZ">&lt;/ref_seq> 
+            &lt;name  scheme="HGVS"> c123C&gt;G &lt;/name> 
+        &lt;/variant> 
+        &lt;variant id="id5"> 
+            &lt;ref_seq accession="XYZ">&lt;/ref_seq> 
+            &lt;name  scheme="HGVS"> c123C&gt;G &lt;/name> 
+        &lt;/variant> 
+    &lt;/individual> 
+    
+    &lt;individual id="id7"> 
+        &lt;gender code="9">&lt;description term="XX-male"/>&lt;/gender> 
+        &lt;variant id="id9"> 
+            &lt;ref_seq accession="XYZ">&lt;/ref_seq> 
+            &lt;name scheme="HGVS"> 
+                c123C&gt;G
+            &lt;/name> 
+        &lt;/variant> 
+    &lt;/individual> 
+       
+    &lt;comment>&lt;text>simple comment&lt;/text>&lt;/comment> 
+    &lt;comment source="example_ontology" term="example term">&lt;text>my defined comment&lt;/text>&lt;/comment> 
+    &lt;comment>&lt;text>what ever&lt;/text>&lt;comment>&lt;text>my structured comment&lt;/text>&lt;/comment>&lt;/comment> 
+    &lt;comment>&lt;text>what ever...&lt;/text>&lt;comment>&lt;text>my complex structured comment&lt;/text>&lt;evidence_code term="something"/>&lt;db_xref accession="xyz"/>&lt;/comment>&lt;/comment> 
+    
+    
+&lt;/lsdb>
