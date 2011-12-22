@@ -1,6 +1,6 @@
 * VarioML
  
-Note: We are currently moving this repo from an older svn site and it is not yet up-to-date.
+Note: VERSION 1.0
 
 This project collects the source schema and validation tools for VarioML, a biomedical data standard supporting the integration, federation, and exchange of Variation Data ([[http://varioml.org/]]).
 
